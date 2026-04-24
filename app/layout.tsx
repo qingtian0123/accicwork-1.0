@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lumina Beads — Wear Your Intention | Custom Healing Crystal Bracelets",
-  description: "Design your own beaded bracelet with real crystals, lampwork glass & 14k gold. Every bead carries meaning — wear your intention, carry your calm. Ethically sourced, artisan crafted, shipped worldwide.",
-  keywords: "custom bead bracelet, crystal healing jewelry, DIY bracelet, intention jewelry, spiritual beads, lampwork glass, morandi aesthetic, women empowerment bracelet",
+  title: "Lumina Beads — 100 Trending Beads | Custom Intention Bracelets",
+  description: "Design your own beaded bracelet from 100 trending beads — real crystals, freshwater pearls, 14k gold, Murano glass & more. Every bead carries meaning. From Coquette to Quiet Luxury. Refreshed daily, worldwide shipping.",
+  keywords: "custom bead bracelet, crystal healing jewelry, DIY bracelet, intention jewelry, spiritual beads, lampwork glass, morandi aesthetic, coquette beads, quiet luxury jewelry, evil eye bracelet, baroque pearls, bubble letter beads, smiley face beads, mushroom beads",
   openGraph: {
     title: "Lumina Beads — Wear Your Intention",
     description: "Design your own healing crystal bracelet. Every bead carries meaning.",

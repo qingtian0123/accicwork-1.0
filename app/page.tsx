@@ -1,12 +1,26 @@
 import DIYEditor from "@/components/DIYEditor";
+import Link from "next/link";
+import { BEADS, CATEGORIES, type CategoryKey } from "@/data/beads-catalog";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center bg-[#F5F3EF]">
+      {/* Nav */}
+      <nav className="w-full py-6 px-8 flex items-center justify-between border-b border-[#EBE8E2]">
+        <Link href="/" className="text-[14px] tracking-[0.3em] uppercase text-[#3A3A3A] font-light">
+          Lumina Beads
+        </Link>
+        <div className="flex gap-8 text-[10px] tracking-[0.3em] uppercase text-[#7D7870]">
+          <Link href="/" className="text-[#3A3A3A] border-b border-[#C4B5A5]">Design</Link>
+          <Link href="/shop" className="hover:text-[#3A3A3A] transition-colors">Shop All ({BEADS.length})</Link>
+          <a href="#story" className="hover:text-[#3A3A3A] transition-colors">Story</a>
+        </div>
+      </nav>
+
       {/* Hero */}
       <header className="w-full py-16 flex flex-col items-center">
         <p className="text-[11px] tracking-[0.5em] uppercase text-[#B8A99A] mb-4">
-          Healing Crystals &middot; Artisan Glass &middot; 14k Gold
+          {BEADS.length} Trending Beads &middot; Refreshed Daily &middot; Worldwide
         </p>
         <h1 className="text-5xl font-extralight tracking-[0.25em] uppercase text-[#3A3A3A] mb-4">
           Lumina Beads
@@ -15,6 +29,12 @@ export default function Home() {
           Wear your intention. Carry your calm.<br/>
           Design a bracelet that tells <em>your</em> story — one bead at a time.
         </p>
+        <Link
+          href="/shop"
+          className="mt-8 px-8 py-3 border border-[#C4B5A5] text-[#7D7870] rounded-full text-[10px] tracking-[0.3em] uppercase hover:bg-[#C4B5A5] hover:text-white transition-all"
+        >
+          Browse All {BEADS.length} Beads →
+        </Link>
       </header>
 
       {/* Value Props */}
@@ -46,6 +66,47 @@ export default function Home() {
       <main className="w-full max-w-7xl flex flex-col items-center pb-12">
         <DIYEditor />
       </main>
+
+      {/* Categories overview */}
+      <section className="w-full max-w-6xl px-6 pb-16">
+        <div className="text-center mb-8">
+          <p className="text-[10px] tracking-[0.5em] uppercase text-[#B8A99A] mb-2">Curated From Global Trends</p>
+          <h2 className="text-2xl font-extralight tracking-[0.15em] uppercase text-[#3A3A3A]">
+            8 Categories &middot; {BEADS.length} Beads
+          </h2>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {(Object.keys(CATEGORIES) as CategoryKey[]).map((cat) => {
+            const count = BEADS.filter(b => b.category === cat).length;
+            const trending = BEADS.filter(b => b.category === cat && b.trending).length;
+            return (
+              <Link
+                key={cat}
+                href={`/shop?cat=${cat}`}
+                className="group bg-white rounded-2xl border border-[#EBE8E2] p-5 hover:border-[#C4B5A5] hover:shadow-md transition-all"
+              >
+                <div
+                  className="w-12 h-12 rounded-full mb-3 flex items-center justify-center"
+                  style={{ backgroundColor: CATEGORIES[cat].color }}
+                ></div>
+                <h3 className="text-[13px] text-[#3A3A3A] font-medium mb-1">{CATEGORIES[cat].label}</h3>
+                <p className="text-[10px] text-[#A69F96]">
+                  {count} beads
+                  {trending > 0 && <span className="text-[#E8B4B8] ml-2">· {trending} hot</span>}
+                </p>
+              </Link>
+            );
+          })}
+        </div>
+        <div className="text-center mt-8">
+          <Link
+            href="/shop"
+            className="inline-block px-8 py-3 bg-[#3A3A3A] text-white rounded-full text-[10px] tracking-[0.3em] uppercase hover:bg-[#5A5A5A] transition-colors"
+          >
+            Shop the Full Collection
+          </Link>
+        </div>
+      </section>
 
       {/* Specs Section */}
       <section className="w-full max-w-4xl px-6 pb-16">
