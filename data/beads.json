@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "category": "Lampwork",
+    "name": "10mm Crackle Glass",
+    "price": 1.52,
+    "image": "https://cbu01.alicdn.com/img/ibank/O1CN01fU6z1S1fU6z1S1fU6z1S_!!0-0-common.jpg",
+    "url": "https://detail.1688.com/offer/803532431054.html",
+    "description": "High crackle effect, popular for Boho bracelets."
+  },
+  {
+    "id": 2,
+    "category": "Lampwork",
+    "name": "Two-tone Ice-crack",
+    "price": 1.10,
+    "image": "https://cbu01.alicdn.com/img/ibank/O1CN01O1CN01O1CN01_!!0-0-common.jpg",
+    "url": "https://detail.1688.com/offer/792005901030.html",
+    "description": "Gradient colors with internal fractures."
+  },
+  {
+    "id": 3,
+    "category": "Ceramic",
+    "name": "Morandi Faceted Spacer",
+    "price": 1.25,
+    "image": "https://cbu01.alicdn.com/img/ibank/O1CN01O1CN01O1CN01_!!0-0-common.jpg",
+    "url": "https://detail.1688.com/offer/939520199600.html",
+    "description": "Matte finish in sage green, dusty rose, and sand."
+  },
+  {
+    "id": 4,
+    "category": "Ceramic",
+    "name": "Pastel Square",
+    "price": 1.90,
+    "image": "https://cbu01.alicdn.com/img/ibank/O1CN01O1CN01O1CN01_!!0-0-common.jpg",
+    "url": "https://detail.1688.com/offer/811968003505.html",
+    "description": "Creamy texture, high demand for 'Clean Girl' aesthetic."
+  },
+  {
+    "id": 5,
+    "category": "Stone",
+    "name": "Natural Agate Crystal",
+    "price": 0.50,
+    "image": "https://cbu01.alicdn.com/img/ibank/O1CN01O1CN01O1CN01_!!0-0-common.jpg",
+    "url": "https://detail.1688.com/offer/800000000001.html",
+    "description": "Natural banding, high sales for health/wellness themes."
+  },
+  {
+    "id": 6,
+    "category": "Gold",
+    "name": "14k GF Pumpkin",
+    "price": 0.22,
+    "image": "https://cbu01.alicdn.com/img/ibank/O1CN01O1CN01O1CN01_!!0-0-common.jpg",
+    "url": "https://detail.1688.com/offer/726671981877.html",
+    "description": "Corrugated/striped texture for luxury feel."
+  },
+  {
+    "id": 7,
+    "category": "Alphabet",
+    "name": "Square Oil-dripped",
+    "price": 0.20,
+    "image": "https://cbu01.alicdn.com/img/ibank/O1CN01O1CN01O1CN01_!!0-0-common.jpg",
+    "url": "https://detail.1688.com/offer/800000000007.html",
+    "description": "Elegant gold lettering on white enamel background."
+  }
+]
